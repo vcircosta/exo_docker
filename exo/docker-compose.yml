@@ -1,0 +1,10 @@
+services:
+  mosters:
+    build: .
+    volumes:
+      - ./posters:/app/posters
+    environment:
+      - POSTER_DIR=/posters
+    ports:
+      - 8081:8080
+
